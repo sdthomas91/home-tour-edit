@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+
 body {
     background: url('/media/luxury-apartment.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -9,6 +10,7 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+
 
 /* Menu */
 .auth-link {
@@ -19,6 +21,11 @@ body {
 .auth-link:hover,
 .auth-link:active {
     color: blue;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #555;
 }
 /* from Bulma */
 .icon {
@@ -117,12 +124,20 @@ body {
     .header-container {
         padding-top: 164px;
     }
+
+    .home-main-content {
+        height: 80%;
+    }
 }
 
 /* correct mobile padding to push content down below header */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
+    }
+
+    .home-main-content {
+        height: 50%;
     }
 
     body {
